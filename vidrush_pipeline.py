@@ -31,10 +31,9 @@ os.makedirs(FAILED_DIR, exist_ok=True)
 # CREDENTIALS — all FREE stack (no paid keys needed)
 # ---------------------------------------------------------
 # OpenRouter — free LLM routing (replaces Groq)
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "sk-or-v1-...")
-
-# Ollama — local free LLM (no key needed)
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+REPLICATE_API_TOKEN = os.environ.get("REPLICATE_API_TOKEN", "")
 
 # ---------------------------------------------------------
 # R2. AI THUMBNAIL GENERATION
