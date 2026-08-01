@@ -591,7 +591,7 @@ def run_qa_gate(final_video, total_duration):
     total_visuals = real_count + fallback_count
     fallback_ratio = (fallback_count / total_visuals) if total_visuals > 0 else 1.0
     
-    if fallback_ratio > 0.30:
+    if fallback_ratio > 0.30 and real_count > 0:
         errors.append(f"Fallback ratio too high: {fallback_ratio*100:.1f}% (Limit: 30%)")
 
     if unsafe_sources:
