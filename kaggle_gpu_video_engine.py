@@ -11,7 +11,13 @@
 # ============================================================
 
 # Step 1: Install dependencies
-!pip install -q torch torchvision diffusers transformers accelerate gradio safetensors sentencepiece protobuf
+# NOTE: In Kaggle/Jupyter, use: !pip install -q torch torchvision diffusers transformers accelerate gradio safetensors sentencepiece protobuf
+# For local use, install via requirements.txt or pip manually.
+try:
+    import torch  # noqa: F401
+    import gradio  # noqa: F401
+except ImportError:
+    raise RuntimeError("kaggle_gpu_video_engine.py requires torch and gradio. Install via pip first.")
 
 import torch
 import gradio as gr

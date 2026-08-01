@@ -34,3 +34,17 @@ manifest.json
 # IDE
 .vscode/
 .idea/
+
+# Python tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.tox/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.botenv
