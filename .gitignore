@@ -1,0 +1,36 @@
+# Secrets
+.env
+*.env
+client_secrets.json
+token.pickle
+new api keys
+keys*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+
+# Media/output
+output/
+temp/
+*.mp4
+*.mp3
+*.wav
+*.jpg
+*.png
+*.webp
+*.ass
+*.srt
+*.part
+
+# Logs
+*.log
+daily_log.txt
+manifest.json
+
+# IDE
+.vscode/
+.idea/
